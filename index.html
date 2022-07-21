@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Akshil Ahuja</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="favicon (1).ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Graduate&family=Poppins:wght@500&family=Sacramento&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Dancing+Script:wght@500&family=Lobster&family=Playball&family=Shrikhand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Allura&family=Marck+Script&family=Merienda&family=The+Nautigal:wght@700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav>
+            <a href="#" class="logo"><img src="photos/3500_6_05-transformed.png" alt="logo"></a>
+        </nav>
+        <div class="top_holder">
+            <img src="photos/sea.png" alt="sea" id="ho">
+            <h1>Hello There</h1>
+            <img src="photos/land.png" alt="land" id="ho">
+            <img src="photos/coconut.png" alt="coconut" id="ho">
+            <img src="photos/clouds.png" alt="clouds">
+        </div>
+        <div class="mid_holder" id="Me">
+            <h2>About me- <a href="https://en.wikipedia.org/wiki/Mostly_Harmless">Mostly Harmless</a></h2>
+            <div class="mera_flex d-flex p-2 flex-fill">
+            <img src="photos/IMG_4249 copy.JPG" alt="Akshil" id="Akshil">
+            <img src="photos/Screenshot 2022-07-19 at 5.54.44 PM.png" alt="Akshil" class="owl">
+            <table class="table table-borderless">
+                <tbody>
+                    <tr>
+                        <td id="head">Official Name: </td>
+                        <td>Akshil Ahuja</td>
+                        <td id="head">Status: </td>
+                        <td>Happy</td>
+                        
+                    </tr>
+                    <tr>
+                        <td id="head">Fav Emojis: </td>
+                        <td>🫡 😌 😅 😂 🥹 😉 🥰</td>
+                        <td id="head">Hobby: </td>
+                        <td>🤭</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+        <!-- Footer -->
+<footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Twitter -->
+        <a class="btn btn-outline-dark btn-floating m-1" href="https://twitter.com/Akshil26285386" role="button"><img src="photos/twitter.png"><i class="fab fa-twitter" alt="twitter"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-dark btn-floating m-1" href="https://www.instagram.com/akshilahuja/" role="button"><img src="photos/insta.png"><i class="fab fa-instagram" alt="insta"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"
+          ><img src="photos/linkedin.png"><i class="fab fa-linkedin-in" alt="linked"></i
+        ></a>
+  
+        <!-- Github -->
+        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"
+          ><img src="photos/github.png"><i class="fab fa-github" alt="github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+  
+      <!-- Section: Text -->
+      <div class="write">
+        <h1 class="canvas-heading">Stay <span id="typeline"></span></h1>
+      </div>
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://www.linkedin.com/in/akshil-ahuja-b816a6223/">Akshil Ahuja</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+    <script>
+        function write (obj, sentence, i, cb) {
+            if (i != sentence.length) {
+                setTimeout(function () {
+                    i++
+                    //console.log('in timeout', i)
+                    obj.innerHTML = sentence.substr(0, i+1) +' <em aria-hidden="true"></em>';
+                    write(obj, sentence, i, cb)
+                }, 80)
+            } else {
+                //console.log(i)
+                cb()
+            }
+        }
+        function erase (obj, cb,i) {
+            var sentence = obj.innerText
+            if (sentence.length != 0) {
+                setTimeout(function () {
+                    sentence = sentence.substr(0,sentence.length-1)
+                    //console.log('in timeout', i)
+                    obj.innerText = sentence
+                    erase(obj, cb)
+                }, 80)
+            } else {
+                obj.innerText = " "
+                cb()
+            }
+        }
+        var typeline = document.querySelector("#typeline")
+
+        function writeerase(obj, sentence, time, cb) {
+            write(obj, sentence, 0, function () {
+                setTimeout(function () {
+                    erase(obj, cb) 
+                }, time) 
+            })
+        }
+
+        var sentences = [
+            "Happy 😃",
+            "Awesome 😎",
+        ]
+                            
+        var counter = 0
+        function loop () {
+            var sentence = sentences[counter % sentences.length]
+            writeerase(typeline, sentence, 2000, loop)
+            counter++
+        }
+        loop();
+    </script>
+    </body>
+</html>
