@@ -1,0 +1,170 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    min-height: 100vw;
+    text-align: center;
+    background: linear-gradient(#10dbff,rgb(0, 255, 208));
+}
+nav img{
+    width: 20%;
+    min-width: 100px;
+    float: left;
+    opacity: 0.5;
+}
+nav{
+    display: inline;
+    background: linear-gradient(#10dbff,transparent);
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 3vw 8vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: auto;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav li{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 18px;
+}
+nav li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    font-size: calc(10px + 0.80vw);
+    
+}
+nav ul li a:hover, .active{
+    background: rgb(255, 255, 255);
+    color: #000000;
+    border-radius: 20px;
+}
+.top_holder{
+    display: block;
+    /* margin-bottom: 18vw; */
+    top: 0px;
+    width: 100%;
+    align-items: center;
+}
+.top_holder h1{
+    font-family: 'The Nautigal', cursive;
+    align-items: center;
+    text-align: center;
+    height: 40vw;
+    font-size: calc(7px + 17vw) ;
+}
+.top_holder img{
+    position: absolute;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+}
+.top_holder img#ho{
+    margin-top: 15px;
+}
+.mid_holder{
+    position: relative;
+    float: left;
+    padding: 15px;
+    padding-top: 5px;
+}
+.mid_holder img{
+    align-self: center;
+    width: 20vw;
+    height: 20vw;
+    float: left;
+    border-radius: 50%;  
+}
+.owl{
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    align-self: center;
+    opacity: 0;
+    transition: all 0.4s ease-out ;
+}
+.owl:hover{
+    opacity: 1;
+}
+.mid_holder p{
+    text-align: left;
+}
+.mid_holder h2{
+    text-align: left;
+    font-family: 'Graduate', cursive;
+    font-size: calc(20px + 3.20vw);
+}
+p{
+    font-size: calc(10px + 1.2vw);
+}
+.mera_flex{
+    width: calc(92vw - 30px);
+}
+table{
+    padding: 1vw;
+    text-align: left;
+    font-size: calc(5px + 1.5vw);
+    font-family: 'Graduate', cursive;
+}
+td#head{
+    text-align: right;
+}
+footer{
+    position: absolute;
+    top: calc(200px + 77vw);
+    height: auto;
+    width: 100vw;
+
+}
+footer img{
+    width: calc(30px + 1.7vw);
+    border: none;
+}
+footer img:hover{
+    position: relative;
+    bottom: 0.3vw;
+    transition: 0.3s;
+    width: calc(30px + 1.9vw);
+}
+.text{
+    color: white;
+      border-right: 2px solid rgb(62, 216, 255);
+      font-size: calc(30px + 1.5px);
+      font-family: sans-serif;
+      color: rgb(62, 216, 255);
+  }
+  #typeline {
+	color: pink;
+}
+h2 a{
+    text-decoration: none;
+    color: #000000;
+}
+h2 a:hover{
+    text-decoration: none;
+    color: #000000;
+}
+/* font-family: 'Edu TAS Beginner', cursive;
+font-family: 'Graduate', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Sacramento', cursive; 
+font-family: 'Caveat', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Playball', cursive;
+font-family: 'Shrikhand', cursive;
+font-family: 'Edu VIC WA NT Beginner', cursive;
+font-family: 'Allura', cursive;
+font-family: 'Marck Script', cursive;
+font-family: 'Merienda', cursive;
+font-family: 'The Nautigal', cursive;*/
